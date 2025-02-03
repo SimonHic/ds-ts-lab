@@ -1,50 +1,55 @@
-// (Optional) Change the names below to your friends.
-
 interface Friend {
     name: string;
     phone: string;
     age: number
 }
 
-const friend1 = {
-    name: "Paul Fleming",
+interface Colleague {
+    name: string;
+    department: string;
+    email: string;
+    extension: number 
+}
+
+const friend1: Friend = {
+    name: "Bob Ross",
     phone: "087-12345",
     age: 25,
   };
   
-  const friend2 = {
-    name: "Jane Costello",
+  const friend2: Friend = {
+    name: "Ross Bob",
     phone: "086--12345",
     age: 31,
   };
   
-  const friends = [friend1, friend2];
+  const friends: Friend[] = [friend1, friend2];
   console.log(friends[1]);
   
   //   -------------------
   const colleague1 = {
-    name: "Ralph Graham",
-    department: "Engineering",
+    name: "Robby Boss",
+    department: "Art",
     contact: {
-      email: "rgraham@company.com",
+      email: "rboss@company.com",
       extension: 121,
     },
   };
   
   const colleague2 = {
-    name: "Patti Burke",
+    name: "Bossy Rob",
     department: "Finance",
     contact: {
-      email: "pburke@company.com",
+      email: "brob@company.com",
       extension: 132,
     },
   };
   
   const colleague3 = {
-    name: "Dean Sullivan",
+    name: "Brossy Brob",
     department: "HR",
     contact: {
-      email: "dos@company.com",
+      email: "bbrob@company.com",
       extension: 125,
     },
   };
