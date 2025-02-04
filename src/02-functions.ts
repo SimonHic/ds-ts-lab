@@ -2,14 +2,14 @@ import {Friend, Colleague } from './myTypes'
 import { friends } from './01-basics'
 import { colleagues } from './01-basics'
 
-function older(f: Friend) : string {
+function older(f: Friend) {
     f.age += 1
     return `${f.name} is now ${f.age}` 
 }
 
 console.log(older(friends[0]))
 
-function allOlder(f1: Friend[]) : string[] {
+function allOlder(f1: Friend[]) {
     const result: string[] = [];
     f1.forEach(f => {
         f.age += 1;
@@ -21,7 +21,7 @@ function allOlder(f1: Friend[]) : string[] {
 console.log(allOlder(friends));
 
 // Find the colleague with the highest extension number.
-function highestExtension(cs: Colleague[]): Colleague {
+function highestExtension(cs: Colleague[]) { // Inferred retun type
     const result = cs.sort(
       (c1, c2) => c1.contact.extension - c2.contact.extension
     );
