@@ -20,7 +20,7 @@ const friend1: Friend = {
   //   -------------------
   const colleague1: Colleague = {
     name: "Robby Boss",
-    department: "Art",
+    department: "Engineering",
     contact: {
       email: "rboss@company.com",
       extension: 121,
